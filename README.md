@@ -1,5 +1,5 @@
 ## Générateur de paysages virtuels 
-##KANOUTE HAMIDOU SIO12
+## KANOUTE HAMIDOU SIO12
 
 
 Projet de développement logiciel à destinatation d'apprentis développeur.
