@@ -1,5 +1,5 @@
 import { AbstractForm } from './AbstractForm.js';
-class Pyramide  extends  AbstractForm {
+class Building  extends  AbstractForm {
 
     // you create new Rectangles by calling this as a function
     // these are the arguments you pass in
@@ -71,7 +71,7 @@ class Pyramide  extends  AbstractForm {
         let max = ~~Math.random() * 10 + 7
         let forms = []
         for (let i=0; i<max; i++ ) {
-            forms.push(new Pyramide(
+            forms.push(new Building(
                 ~~(Math.random() * window.innerWidth),
                 ~~(Math.random() * 400),
                 ~~(Math.random() * (widthCase)),
@@ -86,4 +86,4 @@ class Pyramide  extends  AbstractForm {
     }
 }
 
-export { Pyramide }
+export { Building }

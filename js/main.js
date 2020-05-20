@@ -2,7 +2,7 @@ import {Immeuble} from './modules/Immeuble.js';
 import {Triangle} from './modules/Triangle.js';
 import {AbstractForm} from './modules/AbstractForm.js';
 import {Rond} from "./modules/Rond.js";
-import {Pyramide} from "./modules/Pyramide.js";
+import {Building} from "./modules/Building.js";
 import {TruePyramide} from "./modules/TruePyramide.js";
 import {Planete} from "./modules/Planete.js";
 import {Cloud} from "./modules/Cloud.js";
@@ -49,7 +49,7 @@ function buildForms() {
   let forms = Immeuble.buildForms()
   forms = forms.concat(Triangle.buildForms())
   forms = forms.concat(Rond.buildForms())
-  forms = forms.concat(Pyramide.buildForms())
+  forms = forms.concat(Building.buildForms())
   forms = forms.concat(TruePyramide.buildForms())
   forms = forms.concat(Planete.buildForms())
   forms = forms.concat(Cloud.buildForms())
@@ -73,7 +73,7 @@ function drawThisForm(whichForm) {
   } else if (whichForm === 'Rond') {
     _drawForms(Rond.buildForms())
   } else if (whichForm === 'Pyramide') {
-    _drawForms(Pyramide.buildForms())
+    _drawForms(Building.buildForms())
   } else if (whichForm === 'TruePyramide') {
   _drawForms(TruePyramide.buildForms())
   } else if (whichForm === 'Planete') {
