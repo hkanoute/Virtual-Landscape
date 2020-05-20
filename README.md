@@ -73,6 +73,7 @@ Cette troisième classe est le fruit de recherche sur internet et à permis de c
 
 ![TruePyramideCode](docs/CodePyramide.PNG)
 #### Voici le code perméttant de dessiner les pyramides,et nous pouvons voir que les coordonées sont fixent ce qui donne des dessins fixe comme ci-dessous.
+
 ![Fixe](docs/TruePyramide.PNG)
 
 #### Cependant l'ojectif de ce projet est de crée des paysage de façon aléatoire de ce fait il fait mettre des coordonnés de façon aléatoire.
