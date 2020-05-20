@@ -55,7 +55,7 @@ Objectifs
 
 
 ## Première classe ajoutés
-* ##Rond.js
+* ## Rond.js
 ![Rond](docs/Rond.PNG)
 
 Afin de comprendre la structure et prendre en main le code déjà présent, j'ai crée la classe rond.js en me bassant sur les classe immeuble et triangle, une fois la création du rond reussi,
