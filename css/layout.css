@@ -11,7 +11,7 @@ body {
     background: -moz-radial-gradient( left bottom, circle farthest-corner, #e1fd3e, #174709);
     background: -ms-radial-gradient( left bottom, circle farthest-corner, #e1fd3e, #174709);
     background: -o-radial-gradient( left bottom, circle farthest-corner, #e1fd3e, #174709);      */
-    background: radial-gradient( farthest-corner circle at left bottom, #1A2990, #26D0CE);
+    background: radial-gradient( farthest-corner circle at left bottom, white, black);
 }
 
 header {

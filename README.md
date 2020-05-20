@@ -1,4 +1,6 @@
 ## Générateur de paysages virtuels 
+##KANOUTE HAMIDOU SIO12
+
 
 Projet de développement logiciel à destinatation d'apprentis développeur.
 
@@ -26,13 +28,21 @@ Objectifs
 │   ├── analyse.png
 │   ├── java-genPaysageEtudiant.zip
 │   └── java-paysage-virutel.png
-├── index.html
+|
 ├── js
 │   ├── main.js
 │   └── modules
 │       ├── AbstractForm.js
-│       ├── Immeuble.js
-│       └── Triangle.js
+│       ├── Cloud.js
+|       ├── Immeuble.js
+|       ├── Planete.js
+|       ├── Pyramide.js
+|       ├── Rond.js
+|       ├── Stickman.js
+|       ├── Triangle.js
+│       └── TruePyramide.js
+|      
+├── index.html
 └── README.md
 ```
 
@@ -69,21 +79,6 @@ Conformément aux exemples fournis
  
  
 ![analyse](docs/analyse.png)
-
-
-#### Délivrée par un serveur HTTP
-
-Attention, l'application doit être placée derrière en serveur HTTP, et 
-donc accessible à un utilisateur en réponse à une 
-requête de type `http://` (et non en protocole `file://`)  
-
-
-### Comment démarrer ?
-
-1. Étudier le tutoriel https://developer.mozilla.org/fr/docs/Tutoriel_canvas/Utilisation_de_base - pour un internet ouvert - Fondation Mozilla open source (https://www.mozilla.org/fr/about/manifesto/)  
-2. Étudier le code de `index.html`, `main.js` et autres de l'application.
-3. Créer une nouvelle classe dans `modules` en vous basant sur une idée originale et des exemples glanés sur le net 
-4. Mettre au point ... 
 
 ### Analyse du code existant
 
@@ -172,25 +167,40 @@ function drawThisForm(whichForm) {
 }
 
 ```
+#Les classe ajoutés ou à venir
+|Classe Prévue|Classe ajouté|classe prévue|
+|:---------: |:-----:|:-------:|
+|Cloud.js    | ✔     |   ✗    |
+|Pyramide.js | ✔     |   ✗    |
+|Stickman.js | ✔     |   ✗    |
+|Rond.js     | ✔     |   ✗    |
 
-* Lors d'un ajout d'une nouvelle classe  (par exemple `MaNouvelleFome.js`), 
-redéfinir les méthodes `static buildForms()` et ` draw(ctx)`. Prendre exemple sur `Immeuble` et `Triangle`
+
+##Première classe ajoutés
+* ##Rond.js
+![Rond](docs/Rond.PNG)
+
+Cette première classe et un copier/coller de la classe triangle avec des modification afin de dessiner un rond. Grâce à cette classe j'ai pu prendre en main le code déjà présent et comprendre la structure.
+
+* ###Pyramide.js 
+Cette seconde classe à permis d'appliquer les cours vue sur le canvas afin de crée une "pyramide", ce fut soldé par un echec mais cependant cela donne un résultat satisfaisant donc je l'ai gardé.
+
+* ###TruePyramide et Stickman
+Cette troisième classe est le fruit de recherche sur internet et à permis de crée une vrai pyramide d'ou le nom "TruePyramide" de même pour stickman.
+
+#Problème rencontrer 
+
+![TruePyramideCode](docs/CodePyramide.PNG)
+####Voici le code perméttant de dessiner les pyramides,et nous pouvons voir que les coordonées sont fixent ce qui donne des dessins fixe comme ci-dessous.
+![Fixe](docs/TruePyramide.PNG)
+
+####Cependant l'ojectif de ce projet est de crée des paysage de façon aléatoire de ce fait il fait mettre des coordonnés de façon aléatoire.
 
 
-<hr>
 
-##### Pour info, un historique en java
 
- ![old-example](docs/java-paysage-virutel.png)
+#Solution
 
-[Exemple d'un projet d'étudiant - code et executable en java](docs/java-genPaysageEtudiant.zip) 
 
-Une fois décompressé :
-
-`=> lancement   : java -jar paysage.jar`
-
-`=> son rapport : ./genPaysage/rapport/`
-
-`=> le code source : ./genPaysage/*`
 
 

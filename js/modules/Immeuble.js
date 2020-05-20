@@ -1,4 +1,4 @@
-import { AbstractForm } from './AbstractForm';
+import { AbstractForm } from './AbstractForm.js';
 class Immeuble  extends  AbstractForm {
 
   // you create new Rectangles by calling this as a function
@@ -40,6 +40,7 @@ class Immeuble  extends  AbstractForm {
     // create the *path*
     ctx.beginPath()
     ctx.strokeStyle = this.strokeColor
+
 
 
     const MAX_HEAD = 80
@@ -84,7 +85,7 @@ class Immeuble  extends  AbstractForm {
         ~~(Math.random() * 400),
         ~~(Math.random() * (widthCase)),
         ~~(Math.random() * (widthCase*2)),
-        (i%2 === 0) ? 'gold' : 'gray',
+        (i%2 === 0) ? 'gold' : 'white',
         'black',
         1,
         true

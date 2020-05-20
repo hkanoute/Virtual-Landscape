@@ -1,15 +1,15 @@
-import { AbstractForm } from './AbstractForm';
+import { AbstractForm } from './AbstractForm.js';
 class Triangle extends AbstractForm {
   // add default values to avoid errors on empty arguments
   constructor (
-    x = 0,
-    y = 0,
-    width = 0,
-    height = 0,
-    fillColor = '',
-    strokeColor = '',
-    strokeWidth = 2,
-    pesenteur= false
+      x = 0,
+      y = 0,
+      width = 0,
+      height = 0,
+      fillColor = '',
+      strokeColor = '',
+      strokeWidth = 2,
+      pesenteur= true
   ) {
     super(x,y,width, height, fillColor, strokeColor, strokeWidth, pesenteur)
   }
@@ -45,6 +45,7 @@ class Triangle extends AbstractForm {
     ctx.lineTo(this.right, new_y + this.height)
     ctx.lineTo(this.x, new_y + this.height)
 
+
     ctx.closePath()
 
     // draw the path to screen
@@ -63,20 +64,22 @@ class Triangle extends AbstractForm {
    */
   static buildForms() {
     // create a new rectangle object using the Immeuble class
-    const myTriangle = new Triangle(250, 70, 100, 100, 'gold', '', 2, true )
+    let color = ["red","yellow","green","blue","white","orange","purple"]
+    let i =  ~~(Math.random() *color.length)
+    const myTriangle = new Triangle(250, 70, 100, 100, color[i], '', 2, true )
     let max = ~~Math.random() * 10 + 5
     let forms = []
     for (let i=0; i<max; i++ ) {
       forms.push(
-        new Triangle(
-          ~~(Math.random()*3*myTriangle.x + 50) ,
-          ~~(Math.random()*myTriangle.y),
-          ~~(Math.random()*3*myTriangle.width),
-          ~~(Math.random()*myTriangle.height),
-          myTriangle.fillColor,
-          myTriangle.strokeColor,
-          '',
-          i%2===0))
+          new Triangle(
+              ~~(Math.random()*3*myTriangle.x + 50) ,
+              ~~(Math.random()*myTriangle.y),
+              ~~(Math.random()*3*myTriangle.width),
+              ~~(Math.random()*myTriangle.height),
+              myTriangle.fillColor,
+              myTriangle.strokeColor,
+              '',
+              i%2===0))
     }
     const builds = forms
 

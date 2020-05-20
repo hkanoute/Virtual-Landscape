@@ -1,6 +1,12 @@
 import {Immeuble} from './modules/Immeuble.js';
 import {Triangle} from './modules/Triangle.js';
-import {AbstractForm} from './modules/AbstractForm';
+import {AbstractForm} from './modules/AbstractForm.js';
+import {Rond} from "./modules/Rond.js";
+import {Pyramide} from "./modules/Pyramide.js";
+import {TruePyramide} from "./modules/TruePyramide.js";
+import {Planete} from "./modules/Planete.js";
+import {Cloud} from "./modules/Cloud.js";
+import {Stickman} from "./modules/Stickman.js";
 
 var cwPrev = null
 var chPrev = null
@@ -42,7 +48,12 @@ function _drawForms(forms) {
 function buildForms() {
   let forms = Immeuble.buildForms()
   forms = forms.concat(Triangle.buildForms())
-  forms = forms.concat(AbstractForm.buildForms())
+  forms = forms.concat(Rond.buildForms())
+  forms = forms.concat(Pyramide.buildForms())
+  forms = forms.concat(TruePyramide.buildForms())
+  forms = forms.concat(Planete.buildForms())
+  forms = forms.concat(Cloud.buildForms())
+  forms = forms.concat(Stickman.buildForms())
   // à compléter/modifier
   // etc. pour chacune de vos classes
   return forms
@@ -59,7 +70,20 @@ function drawThisForm(whichForm) {
     _drawForms(Triangle.buildForms())
   } else if (whichForm === 'AbstractForm') {
     _drawForms(AbstractForm.buildForms())
+  } else if (whichForm === 'Rond') {
+    _drawForms(Rond.buildForms())
+  } else if (whichForm === 'Pyramide') {
+    _drawForms(Pyramide.buildForms())
+  } else if (whichForm === 'TruePyramide') {
+  _drawForms(TruePyramide.buildForms())
+  } else if (whichForm === 'Planete') {
+    _drawForms(Planete.buildForms())
+  } else if (whichForm === 'Cloud') {
+    _drawForms(Cloud.buildForms())
+  } else if (whichForm === 'Stickman') {
+    _drawForms(Stickman.buildForms())
   }
+
 }
 
 function drawAllForms() {
