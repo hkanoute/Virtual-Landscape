@@ -73,7 +73,7 @@ Ces classes sont le fruit de recherche, de réflexion étant donné qu'ils sont 
 
 
 
-# Problème rencontrer 
+# Problème rencontrés 
 
 ![TruePyramideCode](docs/CodePyramide.PNG)
 #### Voici le code permettant de dessiner les pyramides, et nous pouvons voir que les coordonnées sont fixent ce qui donne des dessins fixe comme ci-dessous.
