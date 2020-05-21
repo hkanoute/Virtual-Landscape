@@ -88,7 +88,7 @@ Ces classes sont le fruit de recherche, de réflexion étant donné qu'ils sont 
 
 # Solution
 ![TruePyramideSoluc](docs/Solution.PNG)
-#### La solution trouvée à été trouver par chance, je me suis simple dit " si j'ajoute des valeurs aléatoire au valeur déjà présente cela donnerai quoi ?", cela a permit de résoudre les problèmes de coordonner et de pyramide défigurée
+#### La solution trouvée à été trouver par chance, après plusieurs jours à cherché comment résoudre ce problème, je me suis simple dit " si j'ajoute des valeurs aléatoire au valeur déjà présente cela donnerai quoi ?", cela a permit de résoudre les problèmes de coordonner et de pyramide défigurée.
 
 ![TruePyramide2](docs/TruePyramide2.png) 
 
