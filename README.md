@@ -67,7 +67,7 @@ J'ai fait beaucoup de tests sur cette dernière afin d'améliorer ma maîtrise d
 
 Cette seconde classe a pour but la réalisation de building, ce fut sans difficulté une boucle suffi pour sa création. Et afin de rendre cela plus
 Plus coloré, j'ai initialisé un tableau de couleur "color" dans lequel on va choisir une couleur aléatoire pour chaque building grâce à la variable i qui est une variable aléatoire entre 0 la taille du tableau.
-* ### TruePyramide et Stickman
+* ### TruePyramide, cloud et Stickman
 Ces classes sont le fruit de recherche, de réflexion étant donné qu'ils sont basés sur des tutoriels en ligne, il a fallu les adapter à la structure de mon projet.
 
 
@@ -99,6 +99,17 @@ Ces classes sont le fruit de recherche, de réflexion étant donné qu'ils sont 
 ![Forms](docs/Forms.PNG)
 
 ## Cette solution s'applique aussi au autre classe ajoutés comme cloud.js ou stickman.js
+
+# Voici quelques exemples de paysage que ce programme peut afficher
+
+![Rendu](docs/rendu.png)
+
+![Rendu](docs/rendu2.png)
+
+![Rendu](docs/rendu3.png)
+
+
+
 
 
 
